@@ -2203,26 +2203,35 @@ p {
 }
 
 .hero_section {
-  height: 100%;
-  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img.jpg");
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img.jpg");
-  background-position: 0px 0px, 50% 50%;
+  height: 70%;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img-1920.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img-1920.jpg");
+  background-position: 0px 0px, 50% 30%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
 }
 
+@media (min-width: 1921px) {
+  .hero_section {
+    height: 70%;
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img-2560.jpg");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img-2560.jpg");
+  }
+}
+
 @media (max-width: 991px) {
   .hero_section {
-    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img.jpg");
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img.jpg");
-    background-position: 0px 0px, 50% 50%;
+    height: 100vw;
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img-991.jpg");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 79%), url("../images/hero-img-991.jpg");
+    background-position: 0px 0px, 50% 30%;
   }
 }
 
 @media (max-width: 767px) {
   .hero_section {
-    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)), url("../images/hero-img.jpg");
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)), url("../images/hero-img.jpg");
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)), url("../images/hero-img-767.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)), url("../images/hero-img-767.jpg");
     background-position: 0px 0px, 50% 0px;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -2231,12 +2240,11 @@ p {
 
 @media (max-width: 479px) {
   .hero_section {
-    height: 105%;
-    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.89) 13%, rgba(255, 255, 255, 0) 85%), url("../images/hero-img.jpg");
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.89) 13%, rgba(255, 255, 255, 0) 85%), url("../images/hero-img.jpg");
-    background-position: 0px 0px, 76% 50%;
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.89) 13%, rgba(255, 255, 255, 0) 85%), url("../images/hero-img-479.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.89) 13%, rgba(255, 255, 255, 0) 85%), url("../images/hero-img-479.jpg");
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
+    height: 105%;
   }
 }
 
@@ -2297,7 +2305,7 @@ p {
   margin-bottom: 10px;
   font-family: Oswald, sans-serif;
   color: #fff;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 1.125;
   font-weight: 400;
   text-align: left;
@@ -2307,21 +2315,21 @@ p {
 @media (max-width: 991px) {
   .main_tagline {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 42px;
   }
 }
 
 @media (max-width: 767px) {
   .main_tagline {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 479px) {
   .main_tagline {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
   }
 }
@@ -2702,6 +2710,24 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media (max-width: 991px) {
+  .location_section {
+    background-image: url("../images/contact-bg-img-991.jpg");
+  }
+}
+
+@media (max-width: 767px) {
+  .location_section {
+    background-image: url("../images/contact-bg-img-767.jpg");
+  }
+}
+
+@media (max-width: 479px) {
+  .location_section {
+    background-image: url("../images/contact-bg-img-479.jpg");
+  }
 }
 
 .locations_div_container {

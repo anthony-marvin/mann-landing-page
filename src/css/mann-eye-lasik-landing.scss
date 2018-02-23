@@ -464,6 +464,7 @@ p {
   line-height: 1.5;
 }
 
+
 .about_nielson {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1050,4 +1051,22 @@ p {
   &.w--open {
     background-color: #33658a;
   }
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include large-phone {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  &--white {
+    background-color: #fff;
+  }
+  &--blue {
+    background-color: #eef8ff;
+  }
+}
+.calculator_frame {
+  border: 0;
 }
